@@ -1,0 +1,83 @@
+.topbar {
+    width: 100vw;
+    height: 70px;
+    background-color: #0F1626;
+    color: #F5F5F5;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    box-shadow: 10px 4px 8px 0 rgba(0, 0, 0, 0.2), 10px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition-timing-function: ease-in;
+
+    .container {
+        width: 98%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .left {
+        flex: 0.65;
+        padding: 0 1rem;
+
+        .logo {
+            width: fit-content;
+            cursor: pointer;
+
+            font-size: 2rem;
+        }
+    }
+
+    .right {
+        flex: 0.35;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+
+        a {
+            cursor: pointer;
+            color: #F5F5F5;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #FF533D;
+        }
+
+        span {
+            color: #FF533D;
+        }
+
+        .button {
+            display: inline-block;
+            background: #0F1626;
+            border: 1px solid #FF533D;
+            color: #FF533D;
+            padding: 0.5rem 0.75rem;
+            margin: 0.5rem;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: rgba(255, 85, 61, 0.25);
+        }
+    }
+
+}
+
+@media (max-width: 1350px) {
+    .right {
+        font-size: 75%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .topbar {
+        .right {
+            display: none;
+        }
+        
+    }
+}

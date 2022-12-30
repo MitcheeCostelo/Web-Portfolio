@@ -1,0 +1,25 @@
+.app {
+    display: flex;
+    flex-direction: column;
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+::-webkit-scrollbar-track {
+    background: #0F1626;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3A4053;
+    border-radius: 100vw;
+    border: 0.25em solid #0F1626;
+}
+
+@supports (scrollbar-color: #3A4053 #0F1626) {
+    * {
+        scrollbar-color: #3A4053 #0F1626;
+    }
+}

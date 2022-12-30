@@ -1,0 +1,94 @@
+.about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #0F1626;
+
+    .container {
+        color: #F5F5F5;
+        background-color: #0F1626;
+        width: 55%;
+        padding: 1rem 2rem;
+
+        display: flex;
+        flex-direction: row;
+
+        .title {
+            padding: 1rem 0;
+            letter-spacing: 1px;
+            font-size: 2.15rem;
+            white-space: nowrap;
+
+            span {
+                color: #FF533D;
+                font-size: 80%;
+            }
+
+            .title-line {
+                width: 20rem;
+                height: 2px;
+                margin-left: 2rem;
+                margin-bottom: 0.75rem;
+                background: #FF533D;
+                display: inline-block;
+            }
+
+        }
+
+
+        .left {
+            width: 65%;
+            padding: 3rem 0.5rem;
+
+            p {
+                padding: 0.5rem 0;
+                font-size: 1.25rem;
+            }
+
+            ul {
+                padding: 1rem;
+                -webkit-columns: 2;
+                -moz-columns: 2;
+                columns: 2;
+
+                font-size: 1.2rem;
+                list-style: none;
+
+                li::before {
+                    content: "• ";
+                    color: #3590F3;
+                }
+            }
+        }
+
+        .right {
+            width: 35%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .imgContainer {
+                width: 95%;
+                //padding: 4rem 1rem;
+                z-index: 1;
+                box-sizing: border-box;
+
+                .profilePic {
+                    max-width: 100%;
+                    border-radius: 8px;
+                    
+                }
+            }
+
+            .accent {
+                position: absolute;
+                border: 2px solid #FF533D;
+                margin-top: 0rem;
+                margin-left: 0rem;
+                z-index: 0;
+                box-sizing: border-box;
+            }
+        }
+
+    }
+}
